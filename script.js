@@ -63,6 +63,7 @@ function startIteration() {
 				counter++
 			} else {
 				interval = null
+				counter = 0
 				const ele = document.getElementById('counterSpan')
 				if (ele) ele.innerText = `Counter is not running`
 			}
