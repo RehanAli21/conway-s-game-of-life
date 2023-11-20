@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>conway's game of life</title>
+    <script src="./script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Conway's Game Of Life</h1>
+    <div>
+        <input id="rows" placeholder="Number of rows" type="number" min="1"/>
+        <input id="columns" placeholder="Number of columns" type="number" min="1"/>
+        <button onclick="makeGrid()">Make Grid</button>
+        <span id="counterSpan" style="float: right;">Counter is not running</span>
+    </div>
+    <div id="grid">
+    </div>
+    <div>
+        <input id="iterations" placeholder="Number of iteration" type="number" min="1" required/>
+        <button onclick="startIteration()">Start</button>
+    </div>
+</body>
+</html>
